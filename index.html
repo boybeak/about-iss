@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于 · MyApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         /* 全局重置与字体 —— GitHub README 风格 */
         * {
@@ -288,15 +289,12 @@
 </head>
 <body>
     <article class="markdown-body">
-        <!-- 标题 + 应用基本信息 -->
-        <h1>📦 MyApp  · 关于本应用</h1>
-
-        <p><strong>MyApp</strong> 是一款专为 macOS 设计的效率工具，帮助您轻松管理日常事务。当前版本 <code>2.1.0</code> （Build 234） · 最低支持 macOS 12.0。</p>
-        <p>应用标识符: <code>com.yourcompany.myapp</code> · 免费使用，无广告，尊重隐私。</p>
+        <!-- 应用基本信息 -->
+        <div id="app-info"></div>
 
         <hr />
 
-        <!-- 新增：更新日志部分，放在功能之前 -->
+        <!-- 更新日志部分 -->
         <h2>📋 更新日志</h2>
 
         <h3>2.1.0 <span class="version-tag">最新</span></h3>
@@ -329,88 +327,16 @@
         </blockquote>
 
         <!-- 主要功能说明 -->
-        <h2>✨ 主要功能</h2>
-        <ul>
-            <li><strong>智能整理</strong> — 自动分类文件、笔记和任务，支持标签与全文检索。</li>
-            <li><strong>iCloud 同步</strong> — 端到端加密，数据在 Mac、iPhone 间无缝流转。</li>
-            <li><strong>全局快捷栏</strong> — 菜单栏快捷入口，支持自定义快捷键，无需打开主窗口。</li>
-            <li><strong>深色模式适配</strong> — 跟随系统，也可手动切换 5 种强调色。</li>
-            <li><strong>完全离线可用</strong> — 核心功能不依赖网络，数据只存储在本地。</li>
-        </ul>
+        <div id="features"></div>
 
-        <!-- 使用说明（可选） -->
-        <h2>📖 快速上手</h2>
-        <ol>
-            <li>首次启动后，点击菜单栏图标 <code>📌</code> 打开主界面。</li>
-            <li>通过 <strong>⌘ + N</strong> 快速创建新任务或笔记。</li>
-            <li>在设置中登录 iCloud 以启用同步。</li>
-            <li>所有数据默认保存在 <code>~/Library/Containers/MyApp/Data</code>。</li>
-        </ol>
-        <blockquote>
-        <p>💡 提示：您可以在设置中开启“开机启动”，应用会驻留在后台，不占用 Dock。</p>
-        </blockquote>
+        <!-- 使用说明 -->
+        <div id="quickstart"></div>
 
-        <!-- 开源库声明 (表格) -->
-        <h2>📦 开源库致谢</h2>
-        <p>MyApp 基于以下开源项目构建，衷心感谢每一位贡献者：</p>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>库名称</th>
-                    <th>许可证</th>
-                    <th>用途</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="https://github.com/SwiftyJSON/SwiftyJSON">SwiftyJSON</a></td>
-                    <td>MIT</td>
-                    <td>JSON 解析</td>
-                </tr>
-                <tr>
-                    <td><a href="https://github.com/onevcat/Kingfisher">Kingfisher</a></td>
-                    <td>MIT</td>
-                    <td>图片下载与缓存</td>
-                </tr>
-                <tr>
-                    <td><a href="https://github.com/stephencelis/SQLite.swift">SQLite.swift</a></td>
-                    <td>BSD-3</td>
-                    <td>本地数据存储</td>
-                </tr>
-                <tr>
-                    <td><a href="https://sparkle-project.org">Sparkle</a></td>
-                    <td>MIT</td>
-                    <td>应用自动更新</td>
-                </tr>
-                <tr>
-                    <td><a href="https://github.com/jpsim/Yams">Yams</a></td>
-                    <td>MIT</td>
-                    <td>YAML 配置文件解析</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <p>完整的依赖列表及许可文本请参阅应用内 <code>Licenses</code> 文件夹，或访问我们的 <a href="#">GitHub 仓库</a>。</p>
+        <!-- 开源库声明 -->
+        <div id="open-source"></div>
 
         <!-- 开发者个人信息与联系方式 -->
-        <h2>🧑‍💻 开发者</h2>
-
-        <p>
-            <span class="avatar" style="display: inline-block; width: 32px; height: 32px; background: #b0b8c5; border-radius: 50%; vertical-align: middle; margin-right: 10px;"></span>
-            <strong>张小明</strong> · 独立开发者 & 设计师
-        </p>
-
-        <p>热爱 Swift 与简洁的工具设计。欢迎通过以下渠道反馈问题或交流想法：</p>
-
-        <ul class="contact-list">
-            <li><a href="mailto:xiaoming@example.com">✉️ xiaoming@example.com</a></li>
-            <li><a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">🐦 @yourhandle</a></li>
-            <li><a href="https://github.com/yourname" target="_blank" rel="noopener">🐙 github.com/yourname</a></li>
-            <li><a href="https://yourblog.dev" target="_blank" rel="noopener">🌐 yourblog.dev</a></li>
-        </ul>
-
-        <p>您也可以直接在 <a href="https://github.com/yourname/myapp/issues">GitHub Issues</a> 提交反馈或功能请求。</p>
+        <div id="developer"></div>
 
         <hr />
 
@@ -420,5 +346,32 @@
             MyApp 与 Apple Inc. 无关。Apple、macOS 是 Apple Inc. 的注册商标。
         </p>
     </article>
+
+    <script>
+        // 加载并渲染 markdown 文件
+        async function loadMarkdownFile(filePath, elementId) {
+            try {
+                const response = await fetch(filePath);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${filePath}: ${response.status}`);
+                }
+                const markdown = await response.text();
+                const html = marked.parse(markdown);
+                document.getElementById(elementId).innerHTML = html;
+            } catch (error) {
+                console.error('Error loading markdown file:', error);
+                document.getElementById(elementId).innerHTML = `<p style="color: red;">加载失败: ${error.message}</p>`;
+            }
+        }
+
+        // 页面加载完成后加载所有 markdown 文件
+        document.addEventListener('DOMContentLoaded', function() {
+            loadMarkdownFile('app-info.md', 'app-info');
+            loadMarkdownFile('features.md', 'features');
+            loadMarkdownFile('quickstart.md', 'quickstart');
+            loadMarkdownFile('open-source.md', 'open-source');
+            loadMarkdownFile('developer.md', 'developer');
+        });
+    </script>
 </body>
 </html>
