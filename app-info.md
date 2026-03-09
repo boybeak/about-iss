@@ -1,7 +1,7 @@
 # 📦 InputSourceSimple · 关于本应用
 
 **InputSourceSimple** 是一款轻量级的 macOS 菜单栏应用，帮助用户在使用多输入法时快速识别当前所处的输入法状态。当前版本 `1.0.0` （Build 1） · 最低支持 macOS 13.0。
-应用标识符: `com.github.boybeak.inputsourcesimple` · 完全免费，开源无广告。
+应用标识符: `com.github.boybeak.inputsourcesimple` · 免费使用，无广告。
 
 ---
 
@@ -9,7 +9,7 @@
 
 当您在使用多个输入法时，是否经常忘记当前是哪个输入法？InputSourceSimple 能够：
 
-- **悬停显示**：当鼠标移动到屏幕顶部时，自动显示当前输入法状态
+- **跟随显示**：输入法状态跟随广播实时显示
 - **Caps Lock 监控**：实时显示大写锁定键的状态
 - **轻量级设计**：无 Dock 图标干扰，保持桌面整洁
 - **开机自启**：支持开机自动启动，方便日常使用

@@ -1,7 +1,7 @@
 # 🧑‍💻 开发者
 
 <span class="avatar" style="display: inline-block; width: 32px; height: 32px; background: #b0b8c5; border-radius: 50%; vertical-align: middle; margin-right: 10px;"></span>
-**Beak** · 独立开发者 & 设计师
+**boybeak** · 独立开发者 & 设计师
 
 热爱 Swift 与简洁的工具设计。欢迎通过以下渠道反馈问题或交流想法：
 
