@@ -8,10 +8,6 @@
 - [🐙 github.com/boybeak](https://github.com/boybeak)
 - [📱 @boybeak](https://twitter.com/boybeak)
 
-您也可以直接在 [GitHub Issues](https://github.com/boybeak/InputSourceSimple/issues) 提交反馈或功能请求。
+您也可以直接在 [GitHub Issues](https://github.com/boybeak/InputSourceSimpleApp/issues) 提交反馈或功能请求。
 
 ---
-
-## 📋 开源许可证
-
-本应用基于 **MIT 许可证** 开源，您可以在 [GitHub 仓库](https://github.com/boybeak/InputSourceSimple) 查看完整的源代码。
